@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{xzzhou:13}
+Xiangzeng Zhou, Qiang Huang, Lei Xie, and Stephen~J. Cox.
+\newblock A two layered data association approach for ball tracking.
+\newblock In {\em {IEEE} International Conference on Acoustics, Speech, and
+  Signal Processing (ICASSP)}, Vancouver, Canada, 2013.
+
+\bibitem{qhuang:12}
+Qiang Huang, Stephen~J. Cox, Xiangzeng Zhou, and Lei Xie.
+\newblock Detection of ball hits in a tennis game using audio and visual
+  information.
+\newblock In {\em {IEEE} Asia-Pacific Signal Information Processing Association
+  Annual Summit and Conference (APSIPA ASC)}, pages 1--10, Hollywood,
+  California, 2012.
+
+\bibitem{bfli:11}
+Bingfeng Li, Lei Xie, Xiangzeng Zhou, Zhonghua Fu, and Yanning Zhang.
+\newblock Real-time speech-driven virtual avatar.
+\newblock In {\em National Conference on Man-Machine Speech Communication
+  (NCMMSC)}, Xi’an, China, 2011.
+
+\bibitem{jwniu:11}
+Jianwei Niu, Lei Xie, Xiaoming Lu, Xiangzeng Zhou, and Yanning Zhang.
+\newblock Multi-confidence feature integration for utterance rejection in
+  robust speech recognition.
+\newblock In {\em National Conference on Man-Machine Speech Communication
+  (NCMMSC)}, page~4, Xi’an, China, 2011.
+
+\bibitem{lxie:10}
+Lei Xie, Wenhuai Zhao, Xiangzeng Zhou, Xiaohai Tian, Bingfeng Li, Naicai Sun,
+  Yali Zhao, and Yanning Zhang.
+\newblock Speech and auditory interfaces for ubiquitous, immersive and
+  personalized applications.
+\newblock In {\em Immersive and Personalized Applications, Ubiquitous
+  Intelligence Computing and the 7th International Conference on Autonomic
+  Trusted Computing (UIC/ATC)}, Xi’an, China, 2010.
+
+\end{thebibliography}

@@ -1,0 +1,280 @@
+\documentclass[10pt]{article}
+
+\usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{xunicode,xltxtra,url,parskip}
+\defaultfontfeatures{Scale=MatchLowercase, Mapping=tex-text}
+\RequirePackage{color,graphics}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[left=1in, right=1in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{xstring}
+\usepackage{ifthen}
+\usepackage{enumitem}
+\usepackage[xetex,
+            pdfauthor={Xiangzeng Zhou},
+            pdftitle={xiangzengzhou/resume},
+            pdfsubject={Xiangzeng Zhou Résumé},
+            pdfkeywords={object detection, object tracking, pattern recognition, machine learning},
+            pdfproducer={xelatex},
+            pdfcreator={xelatex}]{hyperref}
+\usepackage[absolute]{textpos}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+%%%%%%%%%% 导入中文环境 %%%%%%%%%%
+%\usepackage{fontspec} %使可以設定字型
+%\usepackage{xeCJK} %讓中英文字型分開設置
+%\setmainfont{Courier New} % 设置英文衬线字体
+%\setCJKmainfont{宋体} % 設定中文字型，英文仍為 TeX 字型
+%\XeTeXlinebreaklocale "zh" % 這行及下一行使中文能自動換行
+%\XeTeXlinebreakskip = 0pt plus 1pt
+%
+%%%%%%% 设置中文字号 %%%%%%
+%\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     % 初号
+%\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} % 小初号
+%\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      % 一号
+%\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      % 二号
+%\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  % 小二号
+%\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  % 三号
+%\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      % 四号
+%\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  % 小四号
+%\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    % 五号
+%\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   % 小五号
+%\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  % 六号
+%\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    % 七号
+
+\include{functions}
+\titlespacing{\section}{0pt}{-2pt}{0pt}
+
+\begin{document}
+\pagestyle{empty}
+\par{ \centering{\Huge Xiang-zeng \textsc{Zhou} } \bigskip\par}
+
+\vspace{0.8em}
+\begin{multicols}{2}
+\setlength{\parskip}{0pt}
+\section{Biographical}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textsc{Affiliation}	& \footnotesize{School of Computer Science, Northwestern Polytechnical University} \\
+  \textsc{Address}  & \footnotesize{No. 127, West Youyi Road, Northwestern Polytechnical University, Xi’an, Shaanxi Province, China, 710072}
+\end{tabularx}
+
+\vfill
+\columnbreak
+
+\section{Online}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textsc{Website}	& \href{http://zenhacker.github.io/}{zenhacker.github.io} \\
+  \textsc{github}      & \href{https://github.com/zenhacker}{github.com/zenhacker}\\
+  \textsc{email}       & \href{mailto:xiangzengzhou@gmail.com}{xiangzengzhou@gmail.com} \\
+\end{tabularx}
+\end{multicols}
+
+\begin{tabularx}{\textwidth}{@{}l X}
+  \textsc{Interests} & object detection, object tracking, pattern recognition, machine learning
+\end{tabularx}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\EduEntry}[4]{\textsc{#1} & \textbf{#2} & \textsc{#3} & \textbf{#4}\\}
+
+\vspace{0.8em}
+\section{Education}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}r l p{5.5cm} r}
+
+  \EduEntry{Jul. 2010 - Present}%
+  {Ph.D.}%
+  {Computer Science \& Technology}%
+  {Northwestern Polytechnical University}
+
+  \EduEntry{Sept. 2006 - Jul. 2010}%
+  {B.S. }%
+  {Computer Science \& Technology}%
+  {Northwestern Polytechnical University}
+\end{tabular*}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ExpEntryS}[5]{
+\textsc{#1} & \textbf{#2} #3 \textsc{#4}\\
+\nopagebreak &\multicolumn{2}{p{5.5in}}{\small{#5}}\\
+\nopagebreak \multicolumn{3}{c}{} \\ [-1ex]
+}
+
+\newcommand{\ExpEntryL}[5]{
+\textsc{#1} & \textbf{#2} #3 \textsc{#4}\\
+\nopagebreak &\multicolumn{2}{p{5.5in}}{\small{#5}}\\
+}
+\vspace{0.8em}
+\section{Research Experience}
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+\vspace{-0.5em}
+\begin{longtable}{@{\extracolsep{\fill}} l | l r}
+
+  \ExpEntryS{2011.5 - 2011.12}%
+  {Towards a Queue-Aware ATM: Monitoring and Managing Queues in front of ATMs}%
+  {}%
+  {}%
+  {In order to monitoring queues in front of ATMs, apply stereo camera real-time object tracking approach. With the aid of camera’s real-time tracking, develop a simple application system which can give customer a suggested queue and estimated queuing time.}
+
+  \ExpEntryS{2010.9}%
+  {Keyword Spotting based Real-time Dialog System}%
+  {}%
+  {}%
+  {Make a question-set limited Dialog System implemented by Keyword Spotting approach with improved Online Garbage Model. My main task is proposing a improved method based on Online Garbage Keyword Spotting Model.}
+
+  \ExpEntryS{2010.9}%
+  {Keyword Spotting Tool}%
+  {}%
+  {}%
+  {Make a Keyword Spotting Tool which user can dynamically add or remove keywords by hand.}
+\end{longtable}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\SkillEntry}[2]{ \item #2 #1 }
+\vspace{-0.5em}
+\section{Skills \& Languages}
+\vspace{-1em}
+\begin{multicols}{4}
+\raggedcolumns
+\begin{itemize}
+\renewcommand{\labelitemi}{}
+\renewcommand{\skill}{\textnormal}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+
+\SkillEntry{C}{\threeskill}
+\SkillEntry{Python}{\twoskill}
+\SkillEntry{Matlab}{\threeskill}
+\SkillEntry{Bash}{\twoskill}
+\SkillEntry{English}{\twoskill}
+\SkillEntry{Emacs}{\twoskill}
+\SkillEntry{OpenCV}{\threeskill}
+\SkillEntry{Git}{\twoskill}
+\SkillEntry{Linux}{\twoskill}
+\SkillEntry{\LaTeX}{\twoskill}
+\end{itemize}
+\end{multicols}\vspace{-1em}
+
+%  \begin{footnotesize}
+%    \oneskill Small-scale projects and/or assignments \hfill
+%    \twoskill Multiple projects and/or experience teaching \hfill
+%    \threeskill Large-scale and/or multi-group projects
+%  \end{footnotesize}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newcommand{\proj}[3]{
+%  \textsc{#1} & #2\\
+%   &\href{http://www.#3}{#3}\\
+%   \multicolumn{2}{c}{} \\ [-1ex]
+%}
+%\newcommand{\projl}[3]{
+%  \textsc{#1} & #2\\
+%   &\href{http://www.#3}{#3}\\
+%}
+%\newcommand{\projlh}[4]{
+%  \textsc{#1} & #2\\
+%   &\href{#3}{#4}\\
+%}
+%\section{Personal and Open Source Projects}
+%\begin{tabularx}{\textwidth}{@{}p{3cm}|X@{}}
+%\proj{\href{http://nonpartisan.me}{nonpartisan.me}}%
+%{Google Chrome extension that filters social media websites for political keywords.  Available in the \href{https://chrome.google.com/webstore/detail/nonpartisanme/ninebcppidndhampaggnjbijpacoadgg}{Chrome Web Store}.  Featured in the \href{http://www.charlestoncitypaper.com/charleston/sick-of-politics-on-facebook-try-this-browser-tool/Content?oid=4153447}{Charleston City Paper}.}%
+%{github.com/malloc47/nonpartisan.me}
+%
+%\proj{term-do}{An interactive terminal prompt that displays potential command completions as you type.  A hybrid of gnome-do and Emacs's ido-mode.  Works on many tested VT100 terminal types; built in~\cpp.  Includes client/server architecture implemented with boost.interprocess and full-featured plugin system. Available in the \href{https://aur.archlinux.org/packages/term-do-git/}{Arch Linux AUR}.}{github.com/malloc47/term-do}
+%\end{tabularx}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\let\originalbibitem\bibitem
+\def\bibitem#1#2\par{%
+  \noexpandarg
+  \originalbibitem{#1}
+  \StrSubstitute{#2}{Xiangzeng Zhou}{\textbf{Xiangzeng Zhou}}\par}
+  
+\nocite{xzzhou:13}
+\nocite{qhuang:12}
+\nocite{bfli:11}
+\nocite{lxie:10}
+%\item Jianwei Niu, Lei Xie, Xiaoming Lu, Xiangzeng Zhou, Yanning Zhang, \emph{基于多置信特征融合语音识别拒识算法的设计与实现}, 第十一届全国人机语音通讯学术会议, 2011, 页码4.
+
+\renewcommand\refname{Publications}
+{\footnotesize \bibliography{xzzhoupubs}}
+\bibliographystyle{plainyr-rev}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{0.8em}
+\section{Honors/Awards}
+\begin{tabularx}{\textwidth}{@{}r|X l|p{4.9cm}@{}}
+2010 & First Prize Scholarship of Northwestern Polytechnical University \\
+2009 & National Endeavor Scholarship \\
+2009 & First Prize of C Programming Contest of Northwestern Polytechnical University \\
+2009 & First Prize Scholarship of Northwestern Polytechnical University \\
+2008 & National Endeavor Scholarship \\
+2008 & First Prize Scholarship of Northwestern Polytechnical University \\
+2007 & Second Prize of ACM Programming Contest of Northwestern Polytechnical University \\
+2007 & First Prize Scholarship of Northwestern Polytechnical University \\
+2007 & Third Prize of Mathematical Modeling Contest of Northwestern Polytechnical University
+\end{tabularx}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{0.8em}
+\section{Activities}
+\begin{tabularx}{\textwidth}{@{}r|X l|p{4.9cm}@{}}
+May 30, 2013             &  \textbf{Poster Presentation} on ICASSP 2013 \\
+Mar., 2012 - Sept., 2012 &  \textbf{Visiting Researcher} at University of East Anglia, Norwich, U.K. \\
+Apr., 2011 - Oct., 2011  &  \textbf{Conference Organizing Committee Member} for APSIPA ASC 2011 \\
+Nov. 23 - 25, 2010       &  \textbf{Oral Presentation} on ICALIP 2010 \\
+Oct. 26 - 29, 2010       &  \textbf{Invited Demonstration} for UIC/ATC 2010 \\
+Jul., 2009               &  \textbf{Intern} at China Pacific Insurance (Group) Co., Ltd. \\
+Jun., 2009               &  \textbf{Intern} at KunShan (Suzhou) Ambow Software Training Base
+\end{tabularx}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\null\vfill
+\footnotesize{
+  %Online:  \href{http://resume.malloc47.com}{resume.malloc47.com} \hfill
+  %Full CV: \href{http://cv.malloc47.com}{cv.malloc47.com} \hfill
+  Source:  \href{https://github.com/zenhacker/cv}{github.com/zenhacker/cv/}
+}
+
+\pagestyle{myheadings}
+\markright{Xiang-zeng Zhou}
+
+%%\XeTeXpdffile ''resume.pdf'' page 1 scaled 800
+
+\end{document}
